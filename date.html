@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date Me?</title>
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css">
+	<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Simonetta:400,400i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+
+	<!-- <link href = "require.js"> -->
+
+<style type="text/css">
+	.firstScreen{
+		height: 100vh;
+		/*background-image: url("cropped.png");
+background-size:cover;*/
+  opacity: 1;
+		/*background-color: #127BCA;*/
+	}
+	.secondScreen{
+		height: 100vh;
+		background-color: #127BCA;
+	}
+	.thirdScreen{
+		height: 100vh;
+	}
+	body{
+		font-family: 'Tangerine', cursive;
+		font-family: 'Simonetta', cursive;
+		font-family: 'La Belle Aurore', cursive;
+
+	}
+	h2{
+font-family: 'Roboto Slab', serif;
+font-weight: 700;
+font-size: 4em;
+text-align: center;
+margin: 50px auto 0 auto;
+}
+
+p{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 25px auto 0 auto;
+}
+.yesButton{
+	left: 30%;
+	margin-top: 2%;
+}
+.noButton{
+	left: 50%;
+		margin-top: 2%;
+}
+
+</style>
+</head>
+<body>
+
+
+<div id = "firstScreenID" class = "firstScreen animated zoomIn">
+<!-- <h2 class = "animated fadeIn">Would you like to go on a naughty date with me Ms. Lochner?</h2> -->
+<h2 class = "animated fadeIn">Question?</h2>
+<a href="#secondScreen">	<button id = "yesButton" class="bttn-gradient bttn-lg bttn-danger yesButton">I'D LOVE TOO</button></a>
+<!-- <a href="sms://+9547011248?body=I%27m%20interested%20in%20your%20product.%20Please%20contact%20me.">
+
+<button id = "yesButton" class="bttn-gradient bttn-lg bttn-danger">YES</button></a> -->
+	<a id = "demo01" href="#animatedModal"><button id = "noButton" class = "bttn-jelly bttn-lg bttn-royal noButton">NO I HATE YOU</button></a>
+<!--
+	<audio controls autoplay style="visibility: hidden;">
+	  <source src="Perfect.mp3" type="audio/mpeg">
+	  <p>If you can read this, your browser does not support the audio element.</p>
+	</audio> -->
+
+    <!--Call your modal-->
+    <a id="demo01" href="#animatedModal"></a>
+
+    <!--DEMO01-->
+    <div id="animatedModal" style="background-color: rgb(0, 0, 185); position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; overflow-y: auto; z-index: 9999; opacity: 1; animation-duration: 0.6s;">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal">
+            CLOSE
+        </div>
+
+        <div class="modal-content">
+                  <!--Your modal content goes here-->
+        </div>
+    </div>
+</div>
+
+<a id="secondScreen"><div id = "secondScreenID" class="secondScreen"></a>
+<h2>Does 10/27 work for you?</h2>
+<p>I'm thinking after your interview we'll open up a nice bottle of wine, eat some chipotle, and talk. Then for dessert we'll do some stripping, some nice dirty talk to turn you on, and top it all off with happy endings.</p>
+<!-- <a href="#secondScreen">	<button id = "yesButton" class="bttn-gradient bttn-lg bttn-danger">YES</button></a> -->
+<button id = "yesButton2" class="bttn-gradient bttn-lg bttn-danger">YES</button>
+<button id = "noButton2" class = "bttn-jelly bttn-lg bttn-royal">NO</button>
+</div>
+
+<a id="thirdScreen"><div id = "thirdScreenID" class="thirdScreen"></a>
+<h2>I look forward to seeing you in my two favorite outfits.</h2>
+<p>Hint: Birthday suit + think back to the Christmas party. </p>
+<!-- <a href="#secondScreen">	<button id = "yesButton" class="bttn-gradient bttn-lg bttn-danger">YES</button></a> -->
+<button id = "yesButton2" class="bttn-gradient bttn-lg bttn-danger">YES</button>
+<button id = "noButton2" class = "bttn-jelly bttn-lg bttn-royal">NO</button>
+</div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="animatedModal.min.js"></script>
+  <script>
+  $("#demo01").animatedModal();
+
+</script>
+<script type="text/javascript">
+document.getElementById('noButton2').onclick = function() {
+$('#secondScreenID').addClass('animated shake');
+setTimeout(function(){alert("Wrong! Try Again!!")}, 1000);
+//
+// alert("Wrong! Try Again!!");
+																													};
+ </script>
+ <script>
+ $(document).ready(function(){
+
+         $("div").fadeIn(50000);
+   });
+ </script>
+ <script>
+ $("#yesButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#secondScreenID").offset().top},
+        'slow');
+});
+$("#yesButton2").click(function() {
+	 $('html,body').animate({
+			 scrollTop: $("#thirdScreenID").offset().top},
+			 'slow');
+});
+
+
+
+ </script>
+</body>
+</html>
