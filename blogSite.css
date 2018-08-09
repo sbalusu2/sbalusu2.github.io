@@ -4,7 +4,7 @@ html{
 	font-family: 'Nunito', sans-serif;
 /*	font-family: 'Nunito Sans', sans-serif;
 */
-overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .titlePage{
@@ -181,7 +181,6 @@ overflow-x: hidden;
 }
 
 .aboutMePage{
-
 	height: 100vh;
 	padding: 10px;
 }
@@ -191,7 +190,6 @@ overflow-x: hidden;
 
 }
 .latestPage{
-	background-color:blue;
 	height: 97vh;
 	padding: 10px;
 
@@ -221,8 +219,8 @@ overflow-x: hidden;
 .topicsHeader{
 	text-align: center;
 	font-size: 2.5em;
-	margin-top: -.5%;
-}
+/*	margin-top: -.5%;
+*/}
 .topRow{
 	position: relative;
 	top: 3%;
@@ -316,7 +314,7 @@ overflow-x: hidden;
 	color: white;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-hr {
+.hrContacts {
 	background-color: #dbdbdb;
 	border: none;
 	display: block;
@@ -325,6 +323,14 @@ hr {
 	position: relative;
 	left:12.5%;
 	width: 75%;
+}
+.hrProjects {
+	background-color: #dbdbdb;
+	border: none;
+	display: block;
+	height: 1px;
+	margin: 1rem 0;
+	width: 100%;
 }
 .iconHolder{
 	position: absolute;
@@ -423,8 +429,9 @@ a:hover{
   .materialContainer{
   	margin-left: 8%;
   	margin-right: 8%; 
-  	margin-bottom: -2.5%;
-  }
+  	margin-top: 5%; /* included for mac but idk this needs fixing */
+/*  	margin-bottom: -2.5%;
+*/  }
   .sidebyside{
   	list-style-type: disc;
     -webkit-columns: 2;
@@ -455,3 +462,182 @@ a:hover{
 .bulletpointssize{
 	font-size: .75em;
 }
+/*  				W3 Tabs 
+/* Style the tab */
+/*.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}*/
+
+/* Style the buttons inside the tab */
+/*.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}*/
+
+/* Change background color of buttons on hover */
+/*.tab button:hover {
+    background-color: #ddd;
+}*/
+
+/* Create an active/current tablink class */
+/*.tab button.active {
+    background-color: #ccc;
+}*/
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+/*    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;*/
+}
+#Accenture, #Web{
+	display: block;
+}
+.tabcontent2 {
+    display: none;
+/*    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;*/
+}
+
+
+.wrapper{
+  text-align:center;
+  /*margin:50px auto;*/
+  margin-top: -2%;
+}
+
+.tabs{
+  margin-top:50px;
+  font-size:15px;
+  padding:0px;
+  list-style:none;
+  background:#fff;
+  box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+  display:inline-block;
+  border-radius:50px;
+  position:relative;
+}
+
+.tabs a{
+  text-decoration:none;
+  color: #777;
+  text-transform:uppercase;
+  padding:10px 20px;
+  display:inline-block;
+  position:relative;
+  z-index:1;
+  transition-duration:0.6s;
+}
+
+.tabs a.active{
+  color:#fff;
+}
+
+.tabs a i{
+  margin-right:5px;
+}
+
+.tabs .selector{
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:1;
+  border-radius:50px;
+  transition-duration:0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* #046ae8   #f79102 gator colors*/
+  /*original colors #05abe0     #8200f4*/
+  background: #046ae8;
+
+  background: -moz-linear-gradient(75deg, #046ae8 0%, #f79102 100%);
+  background: -webkit-linear-gradient(75deg, #046ae8 0%,#f79102 100%);
+  background: linear-gradient(75deg, #046ae8 0%,#f79102 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+}
+
+.tabBullets{
+	margin-left: 8%;
+  	margin-right: 8%;
+}
+.companyLogo{
+	margin-left: 37%;
+	/*margin-top: 0%;*/
+	width: 25%;
+	height: 25%;
+}
+.thdlogo{
+	margin-left: 40%;
+	/*margin-top: 0%;*/
+	width: 20%;
+	height: 20%;
+}
+
+.wrapper2{
+  text-align:center;
+  /*margin:50px auto;*/
+  margin-top: -2%;
+}
+
+.tabs2{
+  margin-top:50px;
+  font-size:15px;
+  padding:0px;
+  list-style:none;
+  background:#fff;
+  box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+  display:inline-block;
+  border-radius:50px;
+  position:relative;
+}
+
+.tabs2 a{
+  text-decoration:none;
+  color: #777;
+  text-transform:uppercase;
+  padding:10px 20px;
+  display:inline-block;
+  position:relative;
+  z-index:1;
+  transition-duration:0.6s;
+}
+
+.tabs2 a.active{
+  color:#fff;
+}
+
+.tabs2 a i{
+  margin-right:5px;
+}
+
+.tabs2 .selector2{
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:1;
+  border-radius:50px;
+  transition-duration:0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* #046ae8   #f79102 gator colors*/
+  /*original colors #05abe0     #8200f4*/
+  background: #046ae8;
+
+  background: -moz-linear-gradient(75deg, #046ae8 0%, #f79102 100%);
+  background: -webkit-linear-gradient(75deg, #046ae8 0%,#f79102 100%);
+  background: linear-gradient(75deg, #046ae8 0%,#f79102 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+}
+
