@@ -121,6 +121,9 @@
 
 	</div>
 
+	
+
+
 <!-- 	<div onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
 	<ul id="scene" style="position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
       <li class="layer" data-depth="1.00" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(-27.8375px, -9.2381px, 0px); transform-style: preserve-3d; "><img src="corgipups.png" onmousemove="myFunction()" onmouseout="clearCoor()"></li>
@@ -304,9 +307,9 @@
 </div>
 
 <div class = "latestPage" id = "projects">
-	<h1 class = "topicsHeader">Projects</h1>
+	<h1 class = "topicsHeader" data-aos = "fade-down">Projects</h1>
 	<div class="wrapper2">
-	  <nav class="tabs2">
+	  <nav class="tabs2" data-aos = "fade-up-left">
 	    <div class="selector2"></div>
 		    <a href="#" onclick="openCity2(event, 'Web')" class="active">Web and Mobile Applications</a>
 		    <!-- <a href="#" onclick="openCity2(event, 'Python')">Python Scripts</a> -->
@@ -316,10 +319,23 @@
 		    <a href="#" onclick="openCity2(event, 'ConsultingProjects')">Consulting Projects</a>
 	  </nav>
 	</div>
-	<div id="Web" class="tabcontent2">
-	  <h3>Accenture</h3>
-	  <p>Paris is the capital of France.</p> 
+	<div id="Web" class="tabcontent2 tabBullets" data-aos = "fade-down-left">
+	  <!-- <h3>Web Applications</h3> -->
+	  <p><b> <i>Doggystyle or Tinder for Dogs</b></i> - Web application to allow dog owners to create their own profiles and connect with other dog owners and help their dogs find love. Used HTML and CSS along with jQuery and Bootstrap to create an elegant, yet simple user interface. Incorporated Facebook login to allow users to create profiles simpler, and the Google Maps API to show nearby users. As I have emphasized in each section of this website, I REALLY LOVE DOGS!!</p>
+	  <p><b><i>Headlines Summary</b></i> - Web application that showcases the major headlines of the day from multiple news sites. Used Python to scrape the headlines from the sites and then displayed the results using Flask.</p>
+	  <p><b><i>Stockfinder</b></i> - Website that lets people look for stocks depending on price (under $1, $2.50, $5, $10, $15, $20, $25, $40, $50…etc). Scraped stock information of all stocks on the major US stock exchanges using Python. Used HTML and php to display the stocks depending on the user choice of price.</p>
+	  <p><b><i>learnWithMe </b></i>- A website that presents users resources to learn new languages as well as ideas for new projects. Utilized HTML, CSS, Javscript and jQuery.</p>
+	  <p><b><i>Summarizer</b></i> - Web application created using HTML, CSS, and Javascript, that summarizes content in a given URL by using Algorithmia APIs.</p>
+	  <p><b><i>The Home Depot </b></i> - Hybrid mobile application created using HTML, CSS, AngularJS with Ionic and Cordova. Allows over 380,000 people in over 2000 stores nationwide to sign in to work. </p>
+	  <!-- <h3>Android Applications</h3> -->
+	  <p><b> <i>Learning is Fun</b></i> - Educational series consisting of 4 teaching applications that look to make learning fun for kids and teach them the alphabet, numbers, and shapes and help them practice painting, and the four basic math operations. Utilized concepts such as GridViews, ListViews, ViewPagers, SQLite database and Camera API.</p>
+	<!--   GridViews present the alphabet and numbers and a ViewPager provides pictures and further reinforcement. 100+ math questions are held in a SQLite database and read into the application based on the user choice of subject. ListView of over 20+ shapes provides basic information on the shapes and includes Camera API for more hands on learning and showcasing real life shapes.  -->
+	  <p><b><i>Who's the Best Roommate?</b></i> - </p>
+	<!--   Android application that allows you to create listings of roommate mishaps (e.g. dirty dishes) and shame them via social media or messaging. RecyclerView holds the list of mishaps and the menu provides a way to create new ones. Includes camera API to take photos of the mishaps and implicit intents to share information via social media --> 
+	  <p><b><i>MyJavaPlease</b></i> -  Coffee ordering Android application, enabling users to transfer coffee orders to peers for pickup using implicit intents</p>
+	  <p><b><i>Intel</b></i> - Android Application that allows patients and doctors to view critical health metrics, such as blood pressure, ECG, and respiration, over bluetooth connection with a medical device. Utilized Android Bluetooth API to transfer data from device to app and displayed vital statistics in graph form using Android GraphView. Allowed Patients and Doctors to create nutrition logs and keep track of past visit statistics using a RecyclerView.  </p>
 	</div>
+
 	<!-- <div id="Python" class="tabcontent2">
 	  <h3>Crosslinear</h3>
 	  <p>Paris is the capital of France.</p> 
